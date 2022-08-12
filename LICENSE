@@ -1,0 +1,87 @@
+Non-Commercial and Academic Software License Terms
+==================================================
+
+IMPORTANT NOTE: These Non-Commercial and Academic Software License Terms only permit the use of the LICENSED MATERIALS for NON-COMMERCIAL PURPOSES, as set forth herein. Any person who wishes to make any use of the LICENSED MATERIALS for any purpose other than for NON-COMMERCIAL PURPOSES must not do so under this present AGREEMENT, but will need to obtain from LICENSOR under a separate agreement and against payment of a license fee the right to use the LICENSED MATERIALS for such purposes. In order to obtain such license for commercial purposes, contact LICENSOR under support@envedabio.com. For the avoidance of doubt, nothing in this AGREEMENT shall be construed as an obligation of LICENSOR to enter into such agreement or to grant such license.
+
+Preamble
+--------
+
+A.	Enveda Biosciences ("LICENSOR") has developed software (including any modifications as may be made available by LICENSOR during the TERM, the "SOFTWARE"). The SOFTWARE is available in source code form for download in this repository (https://github.com/enveda/kgem-ensembles-in-drug-discovery/) for use in the Python environment.
+
+B.	In order to support certain non-commercial and academic activities, LICENSOR is willing to license the SOFTWARE, along with certain other materials, to LICENSEE under these II Non-Commercial and Academic Software License Terms (the "AGREEMENT"), subject to the terms and conditions of this AGREEMENT, free of charge and against no consideration for NON-COMMERCIAL PURPOSES only.
+
+Now, therefore, LICENSOR and LICENSEE (each a "PARTY" and collectively the "PARTIES") agree as follows:
+
+1. Definitions
+--------------
+
+Capitalized terms used in this AGREEMENT shall have the meanings assigned to them next to where the term is printed in quotation marks and in capital letters in the body of this AGREEMENT. In addition, the following terms shall have the meaning defined in this Article 1:
+
+"COMMERCIAL PURPOSE" shall be any purpose that is not a NON-COMMERCIAL PURPOSE.
+
+"DOCUMENTATION" shall mean any materials, in electronic or written form, of LICENSOR made available to LICENSEE during the TERM relating to the SOFTWARE, including, without limitation, user guides, tutorial and other instruction materials made available by LICENSOR.
+
+"LICENSED MATERIALS" shall mean the SOFTWARE, the SAMPLE DATA and the DOCUMENTATION as well as any further material or information, or any part thereof, made available by LICENSOR during the TERM under or in relation to this AGREEMENT.
+
+"LICENSEE" shall mean either (i) the legal entity on whose behalf (either by its employees, di-rectors or officers) the SOFTWARE is downloaded and/or installed and/or by whom the rights granted under this AGREEMENT are exercised, or, if LICENSEE is not a legal entity as in (i), (ii) the individual who downloads and/or installs the SOFTWARE and/or who exercises the rights granted under this AGREEMENT.
+
+"LICENSEE DATA" shall mean (i) any of LICENSEE'S own data that LICENSEE feeds into or processes using the SOFTWARE, and (ii) any data that are the output of the processing of LICENSEE DATA by the SOFTWARE. For the avoidance of doubt, LICENSEE DATA shall not include any data included in the SOFTWARE code, in the SAMPLE DATA or that is otherwise made available by LICENSOR to LICENSEE.
+
+"NON-COMMERCIAL PURPOSES" shall mean purposes which do neither directly nor indirectly serve any commercial purposes of LICENSEE and/or of any third party. Internal academic and internal research purposes of LICENSEE, as well as non-commercial uses for governmental purposes by a LICENSEE who is a governmental authority, shall be deemed NON-COMMERCIAL PURPOSES, provided in each case that they are not carried out with the aim of obtaining, directly or indirectly, a financial benefit for LICENSEE or a third party. For the avoidance of doubt, any use of the SOFTWARE for or on behalf of any third party (e.g., such as for providing any kind of services or work product, whether for commercial purposes or otherwise, to third parties, which involve, in their provision or preparation, any use of the SOFTWARE) shall be deemed to serve COMMERCIAL PURPOSES.
+
+"SAMPLE DATA" shall mean sample data that is made available by LICENSOR together with or in relation to the SOFTWARE for the purpose of testing and documenting the algorithm.
+
+2. Parties and Execution of the AGREEMENT
+-----------------------------------------
+
+By downloading and/or installing the SOFTWARE, and/or by exercising any of the rights grant-ed under this AGREEMENT, LICENSEE acknowledges and agrees to the terms and conditions of, and to be bound by, this AGREEMENT and that the AGREEMENT shall be a valid and en-forceable agreement between LICENSOR and LICENSEE.
+
+3. License Grant and Limitations
+--------------------------------
+
+(a)	Subject to the restrictions and limitations set forth in Article 3(b) and all other terms and conditions of this AGREEMENT, LICENSOR hereby grants to LICENSEE and LICENSEE hereby accepts a non-exclusive, non-transferable, non-sublicensable, royalty free license during the term of this AGREEMENT (i) to install, use and modify the SOFTWARE on LI-CENSEE's systems for own NON-COMMERCIAL PURPOSES of LICENSEE and to (ii) use the DOCUMENTATION and the SAMPLE DATA for own NON-COMMERCIAL PURPOSES of LICENSEE, all in accordance with this AGREEMENT and the instructions included in the DOCUMENTATION.
+
+(b)	The license grant under Article 3(a) shall not include any rights other than those expressly set forth in Article 3(a) and it shall in particular and without limitation to the generality of the foregoing exclude the right (i) to make any use of the LICENSED MATERIALS that is not for own NON-COMMERCIAL PURPOSES of LICENSEE or that is not the intended use of the LICENSED MATERIALS as provided for in the DOCUMENTATION and the standard functionalities of the SOFTWARE; (ii) to make any use of the LICENSED MATERIALS in a clinical diagnostic setting, to provide a diagnostic service or product, or to otherwise use the LICENSED MATERIALS for clinical diagnostic purposes; (iii) to make the LI-CENSED MATERIALS, or any part, modification or derivative work thereof, whether in source code or object code form, available to any third party (other than to LICENSEE'S own employees, directors and officers on a need-to-know basis in accordance with this AGREEMENT); and (iv) to remove or alter any copyright notice or other proprietary rights notices placed on or embedded in the LICENSED MATERIALS or any part thereof. Fur-ther, Licensee shall not make any unlawful use of the LICENSED MATERIALS.
+
+4. Intellectual Property Rights
+-------------------------------
+
+(a)	Each PARTY shall retain all rights to all intellectual property owned by such PARTY as of the execution of this AGREEMENT or thereafter acquired independently of the other PARTY. This AGREEMENT shall not transfer or assign any intellectual property rights from either PARTY to the other.
+
+(b)	LICENSEE shall own and retain title to all intellectual property rights that may exist in any of the LICENSEE DATA. LICENSEE acknowledges and agrees that it shall itself be re-sponsible for and assume the risk of the accuracy, integrity and legality of LICENSEE DATA and of the means by which LICENSEE acquires and processes LICENSEE DATA.
+
+(c)	LICENSEE acknowledges that LICENSOR and, as the case may be, certain third parties own and shall retain all intellectual property rights that may exist in the LICENSED MATERIALS, including without limitation any derivative work, improvements or modifications of any of the foregoing made by or on behalf of LICENSOR, alone or together with others.
+
+(d)	The right to any modification to the SOFTWARE made by a PARTY independent of the other PARTY during the TERM shall vest in the PARTY that created such modification. LICENSEE hereby grants to LICENSOR a fully paid-up, irrevocable, perpetual, transferable, sublicensable, worldwide, non-exclusive license to use, further modify and exploit any modification to the SOFTWARE made or conceived by or on behalf of LICENSEE for any of LICENSOR'S purposes. LICENSEE shall inform LICENSOR under support@envedabio.com without undue delay of any modification to the SOFTWARE made by or on behalf of LICENSEE.
+
+5. No Warranty, Exclusion and Limitation of Liability
+-----------------------------------------------------
+
+(a)	LICENSEE acknowledges and agrees that the LICENSED MATERIALS are provided to LICENSEE as-is, without any representation or warranty, and the PARTIES hereby agree that any express or implied representation, warranty or indemnification obligation, including, without limitation, any implied representation or warranty of merchantability, fitness for a particular purpose or non-infringement is hereby expressly excluded to the maxi-mum extent permitted by applicable law.
+
+(b)	To the maximum extent permitted by applicable law, LICENSOR shall not be liable to LICENSEE under any legal theory (whether under contract, tort or otherwise) for any direct or indirect damage, claim, loss, lost profits, loss of business, loss of use, lost savings or other consequential, special, incidental, exemplary or punitive damages.
+
+6. Term and Termination
+-----------------------
+
+(a)	This AGREEMENT shall enter into force upon LICENSEE downloading and/or installing the SOFTWARE and/or exercising the rights granted under this AGREEMENT. It shall re-main in force as long as LICENSEE retains and/or uses any copy of the LICENSED MATERIALS or until terminated as set forth in the following of this Article 6.
+
+(b)	If LICENSEE fails to comply with any of the terms of this AGREEMENT, this AGREE-MENT and all rights granted to LICENSEE under this AGREEMENT terminate automatically with immediate effect. Further, the AGREEMENT will terminate automatically upon LICENSEE deleting all copies of the LICENSED MATERIALS and ceasing any further use thereof.
+
+(c)	Upon termination of this AGREEMENT, LICENSEE shall immediately cease any further use of the LICENSED MATERIALS and permanently delete the LICENSED MATERIALS from all of LICENSEE'S systems (excluding backup media and systems of LICENSEE's data created in the ordinary course of business that are retained exclusively for backup purposes) without retaining any further copy thereof.
+
+7. General Provisions
+---------------------
+
+(a)	Other than as expressly set forth in this AGREEMENT, no person other than the PARTIES shall have any rights or benefits under this AGREEMENT, and nothing in this AGREEMENT is intended to confer on any person other than the PARTIES any rights, benefits or remedies.
+
+(b)	This AGREEMENT constitutes the entire agreement and understanding among the PARTIES with respect to the subject matter hereof, and shall supersede all prior oral, written or other agreements or understandings of the PARTIES relating hereto.
+
+(c)	Should any part or provision of this AGREEMENT be held to be invalid or unenforceable by any competent arbitral tribunal, court, governmental or administrative authority having jurisdiction, the other provisions of this AGREEMENT shall nonetheless remain valid.
+
+8. Governing Law and Place of Jurisdiction
+------------------------------------------
+
+(a)	This AGREEMENT will be governed, construed, and enforced in accordance with the laws of the State of Colorado, without regard to its conflict of laws rules.
+
+(b)	The exclusive place of jurisdiction for any dispute, claim or controversy arising under, out of or in connection with or related to the Agreement (or subsequent amendments thereof), including, without limitation, disputes, claims or controversies regarding its existence, validity, interpretation, performance, breach or termination, shall be the city of Boulder, Colorado, US.

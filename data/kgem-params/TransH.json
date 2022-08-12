@@ -1,0 +1,87 @@
+{
+  "type": "hpo",
+  "metadata": {
+    "title": "HPO Over 'Dataset' for TransH"
+  },
+  "pipeline": {
+    "stopper": "early",
+    "stopper_kwargs": {
+      "frequency": 25,
+      "patience": 2,
+      "relative_delta": 0.002
+    },
+    "dataset_kwargs": {
+      "create_inverse_triples": false
+    },
+    "model": "TransH",
+    "model_kwargs": {
+      "embedding_dim": 50
+    },
+    "model_kwargs_ranges": {
+      "embedding_dim": {
+        "type": "int",
+        "low": 16,
+        "high": 512,
+        "scale": "power_two"
+      }
+    },
+    "loss": "MarginRankingLoss",
+    "loss_kwargs_ranges": {
+      "margin": {
+        "type": "float",
+        "low": 0.5,
+        "high": 10,
+        "q": 1.0
+      }
+    },
+    "regularizer": "NoRegularizer",
+    "optimizer": "adagrad",
+    "optimizer_kwargs": {
+      "weight_decay": 0.0
+    },
+    "optimizer_kwargs_ranges": {
+      "lr": {
+        "type": "float",
+        "low": 0.0001,
+        "high": 0.1,
+        "scale": "log"
+      }
+    },
+    "training_loop": "slcwa",
+    "training_kwargs": {
+      "num_epochs": 200,
+      "label_smoothing": 0.0
+    },
+    "training_kwargs_ranges": {
+      "batch_size": {
+        "type": "int",
+        "low": 8,
+        "high": 11,
+        "scale": "power_two"
+      }
+    },
+    "negative_sampler_kwargs_ranges": {
+      "num_negs_per_pos": {
+        "type": "int",
+        "low": 1,
+        "high": 101,
+        "q": 10
+      }
+    },
+    "evaluator": "RankBasedEvaluator",
+    "evaluator_kwargs": {
+      "filtered": true
+    },
+    "evaluation_kwargs": {
+      "batch_size": null
+    }
+  },
+  "optuna": {
+    "n_trials": 30,
+    "timeout": 172800,
+    "metric": "hits@10",
+    "direction": "maximize",
+    "sampler": "random",
+    "pruner": "nop"
+  }
+}

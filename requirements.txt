@@ -1,0 +1,6 @@
+pandas
+pykeen==1.8.0
+networkx
+jupyter
+matplotlib
+seaborn
