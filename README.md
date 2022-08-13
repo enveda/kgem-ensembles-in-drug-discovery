@@ -1,18 +1,5 @@
 # Ensembles of knowledge graph embedding models improve predictions for drug discovery
 
-[comment]: <> ([![DOI:10.1016/j.ailsci.2022.100036]&#40;http://img.shields.io/badge/DOI-10.1101/2021.01.08.425840-B31B1B.svg&#41;]&#40;https://doi.org/10.1016/j.ailsci.2022.100036&#41;)
-
-[comment]: <> ([![Arxiv]&#40;https://img.shields.io/badge/ArXiv-2105.10488-orange.svg&#41;]&#40;https://arxiv.org/abs/2105.10488&#41;)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pykeen)](https://img.shields.io/pypi/pyversions/pykeen)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-
-[comment]: <> ([![License]&#40;https://img.shields.io/badge/License-Apache_2.0-blue.svg&#41;]&#40;https://opensource.org/licenses/Apache-2.0&#41;)
-
-[comment]: <> (<p align="center">)
-
-[comment]: <> (  <img width="800" src="https://github.com/AstraZeneca/kgem-in-drug-discovery/raw/master/result.png">)
-
-[comment]: <> (</p>)
 
 This repository accompanies the source code and data of the paper titled **"Ensembles of knowledge graph embedding models improve predictions for
 drug discovery"**.
@@ -65,3 +52,41 @@ trained on a GPU server using the *train_model.py* script.
 
 Please note that the trained models will be saved in the **models** directory at the root of this repository within its
 respective KG directory.
+
+## Repository structure
+
+The current repository is structured in the following way:
+```
+|-- LICENSE
+|-- README.md
+|-- data (Data folder)
+|   |-- kg
+|   |   |-- biokg
+|   |   `-- openbiolink
+|   |-- kgem-params
+|   |-- network
+|   `-- plots
+|-- notebooks (Python script for data processing)
+|   |-- Step 1.0 - Data Pre-processing.ipynb
+|   |-- Step 1.1 - Data Splitting.ipynb
+|   |-- Step 2.1 - Score Distribution.ipynb
+|   |-- Step 2.2 - KGEMs benchmarking.ipynb
+|   |-- Step 2.3 - Validation-Test evaluation - Supplementary Table 1.ipynb
+|   |-- Step 2.4 - Analyze Prediction Intersection.ipynb
+|   |-- Step 3 - Exploration of Normalization methods.ipynb
+|   `-- Step 3 - Analyze ensembles.ipynb
+|-- requirements.txt
+`-- src (Python utils for data manipulations)
+    |-- analysis.py
+    |-- constants.py
+    |-- ensemble.py
+    |-- full_pipeline.py
+    |-- get_predictions.py
+    |-- models.py
+    |-- plot.py
+    |-- predict.py
+    |-- train_model.py
+    |-- utils.py
+    |-- version.py
+
+```
