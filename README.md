@@ -2,7 +2,10 @@
 Ensembles of knowledge graph embedding models improve predictions for drug discovery
 <br>
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7002695.svg)](https://doi.org/10.5281/zenodo.7002695) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://github.com/enveda/kgem-ensembles-in-drug-discovery/blob/main/LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://github.com/enveda/kgem-ensembles-in-drug-discovery/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7002695.svg)](https://doi.org/10.5281/zenodo.7002695)
+![Maturity level-1](https://img.shields.io/badge/Maturity%20Level-ML--1-yellow)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pykeen)](https://img.shields.io/pypi/pyversions/pykeen)
 
 </h1>
 
@@ -36,6 +39,12 @@ With the following knowledge graphs benchmarked:
 - [OpenBioLink](https://github.com/OpenBioLink/OpenBioLink)
 - [BioKG](https://github.com/dsi-bdi/biokg)
 
+The figure below provied the distribution of the Precision@100 achieved for each model trained with different hyperparameters in the OpenBioLink and BioKG KGs.
+
+<p align="center">
+  <img width="800" src="https://github.com/enveda/kgem-ensembles-in-drug-discovery/blob/main/data/plots/precision_boxplot_at100.png">
+</p>
+
 
 ## Installation Dependencies
 
@@ -60,6 +69,14 @@ respective KG directory.
 
 ## Trained models and predictions
 All the above mentioned models that were trained for the two KGs and their respecitve predictions can be found on [Zenodo](https://doi.org/10.5281/zenodo.7002695)
+
+## Results and outcomes
+
+We found that the baseline ensemble models outperformed each of the individual ones at all investigated K, highlighting the benefit of applying ensemble learning to KGEMs. The figure below shows the Precision at Top K in the test set using different values of K in the OpenBioLink and BioKG. For predefined values of K, the Precision@K for top predicted drug-disease triples are displayed for two ensembles (i.e., ensemble-all and ensemble-top5) and 2 independent KGEMs (i.e., RotatE and ConvE) using the 99th (BioKG) and 95th (OpenBioLink) percentile normalization approach. Although the latter two KGEMs represent the two best performing benchmarked models, the ensemble models outperform each of these individual models.
+
+<p align="center">
+  <img width="800" src="https://github.com/enveda/kgem-ensembles-in-drug-discovery/blob/main/data/plots/ensembles_vs_best.png">
+</p>
 
 ## Repository structure
 
