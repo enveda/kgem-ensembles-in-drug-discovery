@@ -1,5 +1,10 @@
-# Ensembles of knowledge graph embedding models improve predictions for drug discovery
+<h1 align="center">
+Ensembles of knowledge graph embedding models improve predictions for drug discovery
+<br>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7002695.svg)](https://doi.org/10.5281/zenodo.7002695) [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://github.com/enveda/kgem-ensembles-in-drug-discovery/blob/main/LICENSE)
+
+</h1>
 
 This repository accompanies the source code and data of the paper titled **"Ensembles of knowledge graph embedding models improve predictions for
 drug discovery"**.
@@ -52,6 +57,9 @@ trained on a GPU server using the *train_model.py* script.
 
 Please note that the trained models will be saved in the **models** directory at the root of this repository within its
 respective KG directory.
+
+## Trained models and predictions
+All the above mentioned models that were trained for the two KGs and their respecitve predictions can be found on [Zenodo](https://doi.org/10.5281/zenodo.7002695)
 
 ## Repository structure
 
