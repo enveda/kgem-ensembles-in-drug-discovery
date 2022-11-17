@@ -115,3 +115,9 @@ The current repository is structured in the following way:
     |-- version.py
 
 ```
+
+
+## Citation
+If you have found RPath useful in your work, please consider citing:
+
+> Daniel Rivas-Barragan, Daniel Domingo-Fernández, Yojana Gadiya, David Healey, Ensembles of knowledge graph embedding models improve predictions for drug discovery, *Briefings in Bioinformatics*, 2022;, bbac481, [https://doi.org/10.1093/bib/bbac481](https://doi.org/10.1093/bib/bbac481)
