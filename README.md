@@ -120,4 +120,4 @@ The current repository is structured in the following way:
 ## Citation
 If you have found our work useful, please consider citing:
 
-> Daniel Rivas-Barragan, Daniel Domingo-Fernández, Yojana Gadiya, David Healey, Ensembles of knowledge graph embedding models improve predictions for drug discovery, *Briefings in Bioinformatics*, 2022;, bbac481, [https://doi.org/10.1093/bib/bbac481](https://doi.org/10.1093/bib/bbac481)
+> Daniel Rivas-Barragan, Daniel Domingo-Fernández, Yojana Gadiya, David Healey, Ensembles of knowledge graph embedding models improve predictions for drug discovery (2022). *Briefings in Bioinformatics*, 23(6), bbac481. [https://doi.org/10.1093/bib/bbac481](https://doi.org/10.1093/bib/bbac481)
