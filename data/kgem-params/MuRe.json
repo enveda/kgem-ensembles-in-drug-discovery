@@ -6,7 +6,7 @@
   "pipeline": {
     "stopper": "early",
     "stopper_kwargs": {
-      "frequency": 10,
+      "frequency": 15,
       "patience": 3,
       "relative_delta": 0.002
     },
@@ -14,17 +14,20 @@
       "create_inverse_triples": false
     },
     "model": "MuRE",
-    "model_kwargs": {},
+    "model_kwargs": {
+      "embedding_dim": 256
+    },
     "model_kwargs_ranges": {
       "embedding_dim": {
         "type": "int",
-        "low": 5,
-        "high": 8,
+        "low": 7,
+        "high": 9,
         "scale": "power_two"
       }
     },
-    "loss": "BCEWithLogitsLoss",
-    "optimizer": "adam",
+    "regularizer": "NoRegularizer",
+    "loss": "NSSALoss",
+    "optimizer": "adagrad",
     "optimizer_kwargs": {
       "weight_decay": 0.0
     },
@@ -41,7 +44,7 @@
       "automatic_memory_optimization": true
     },
     "training_kwargs": {
-      "num_epochs": 200
+      "num_epochs": 500
     },
     "training_kwargs_ranges": {
       "batch_size": {

@@ -6,26 +6,27 @@
   "pipeline": {
     "stopper": "early",
     "stopper_kwargs": {
-      "frequency": 50,
-      "patience": 2,
+      "frequency": 15,
+      "patience": 3,
       "relative_delta": 0.002
     },
     "dataset_kwargs": {
       "create_inverse_triples": false
     },
     "model": "RESCAL",
-    "model_kwargs": {},
+    "model_kwargs": {
+      "embedding_dim": 256
+    },
     "model_kwargs_ranges": {
       "embedding_dim": {
         "type": "int",
-        "low": 6,
-        "high": 8,
+        "low": 7,
+        "high": 9,
         "scale": "power_two"
       }
     },
-    "loss": "BCEAfterSigmoidLoss",
-    "regularizer": "NoRegularizer",
-    "optimizer": "adam",
+    "loss": "NSSALoss",
+    "optimizer": "adagrad",
     "optimizer_kwargs": {
       "weight_decay": 0.0
     },
@@ -37,12 +38,12 @@
         "scale": "log"
       }
     },
-    "training_loop": "lcwa",
+    "training_loop": "slcwa",
     "training_loop_kwargs": {
       "automatic_memory_optimization": true
     },
     "training_kwargs": {
-      "num_epochs": 1000
+      "num_epochs": 500
     },
     "training_kwargs_ranges": {
       "batch_size": {

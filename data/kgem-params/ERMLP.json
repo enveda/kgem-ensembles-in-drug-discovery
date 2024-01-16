@@ -6,8 +6,8 @@
   "pipeline": {
     "stopper": "early",
     "stopper_kwargs": {
-      "frequency": 50,
-      "patience": 2,
+      "frequency": 15,
+      "patience": 3,
       "relative_delta": 0.002
     },
     "dataset_kwargs": {
@@ -15,25 +15,17 @@
     },
     "model": "ERMLP",
     "model_kwargs": {
-      "embedding_dim": 64
+      "embedding_dim": 256
     },
-    "model_kwargs_ranges": {
+        "model_kwargs_ranges": {
       "embedding_dim": {
         "type": "int",
-        "low": 6,
-        "high": 8,
+        "low": 7,
+        "high": 9,
         "scale": "power_two"
       }
     },
-    "loss": "MarginRankingLoss",
-    "loss_kwargs_ranges": {
-      "margin": {
-        "type": "float",
-        "low": 0.5,
-        "high": 10,
-        "q": 1.0
-      }
-    },
+    "loss": "NSSALoss",
     "regularizer": "NoRegularizer",
     "optimizer": "adam",
     "optimizer_kwargs": {
@@ -49,8 +41,7 @@
     },
     "training_loop": "slcwa",
     "training_kwargs": {
-      "num_epochs": 1000,
-      "label_smoothing": 0.0
+      "num_epochs": 500
     },
     "training_kwargs_ranges": {
       "batch_size": {
@@ -58,14 +49,6 @@
         "low": 7,
         "high": 9,
         "scale": "power_two"
-      }
-    },
-    "negative_sampler_kwargs_ranges": {
-      "num_negs_per_pos": {
-        "type": "int",
-        "low": 1,
-        "high": 100,
-        "q": 1
       }
     },
     "evaluator": "RankBasedEvaluator",

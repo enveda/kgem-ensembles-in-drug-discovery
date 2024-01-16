@@ -6,7 +6,7 @@
   "pipeline": {
     "stopper": "early",
     "stopper_kwargs": {
-      "frequency": 10,
+      "frequency": 15,
       "patience": 3,
       "relative_delta": 0.002
     },
@@ -14,32 +14,19 @@
       "create_inverse_triples": false
     },
     "model": "RotatE",
-    "model_kwargs": {},
+    "model_kwargs": {
+      "embedding_dim": 256
+    },
     "model_kwargs_ranges": {
       "embedding_dim": {
         "type": "int",
-        "low": 5,
-        "high": 8,
+        "low": 7,
+        "high": 9,
         "scale": "power_two"
       }
     },
     "loss": "NSSALoss",
-    "loss_kwargs_ranges": {
-      "margin": {
-        "type": "float",
-        "low": 1,
-        "high": 30,
-        "q": 2.0
-      },
-      "adversarial_temperature": {
-        "type": "float",
-        "low": 0.1,
-        "high": 1.0,
-        "q": 0.1
-      }
-    },
-    "regularizer": "NoRegularizer",
-    "optimizer": "adam",
+    "optimizer": "adagrad",
     "optimizer_kwargs": {
       "weight_decay": 0.0
     },
@@ -51,13 +38,12 @@
         "scale": "log"
       }
     },
-    "training_loop": "slcwa",
+    "training_loop": "lcwa",
     "training_loop_kwargs": {
       "automatic_memory_optimization": true
     },
     "training_kwargs": {
-      "label_smoothing": 0.0,
-      "num_epochs": 600
+      "num_epochs": 500
     },
     "training_kwargs_ranges": {
       "batch_size": {
@@ -65,14 +51,6 @@
         "low": 7,
         "high": 9,
         "scale": "power_two"
-      }
-    },
-    "negative_sampler_kwargs_ranges": {
-      "num_negs_per_pos": {
-        "type": "int",
-        "low": 1,
-        "high": 100,
-        "q": 1
       }
     },
     "evaluator": "RankBasedEvaluator",

@@ -6,8 +6,8 @@
   "pipeline": {
     "stopper": "early",
     "stopper_kwargs": {
-      "frequency": 25,
-      "patience": 2,
+      "frequency": 15,
+      "patience": 3,
       "relative_delta": 0.002
     },
     "dataset_kwargs": {
@@ -15,26 +15,17 @@
     },
     "model": "TransH",
     "model_kwargs": {
-      "embedding_dim": 50
+      "embedding_dim": 256
     },
     "model_kwargs_ranges": {
       "embedding_dim": {
         "type": "int",
-        "low": 16,
-        "high": 512,
+        "low": 7,
+        "high": 9,
         "scale": "power_two"
       }
     },
-    "loss": "MarginRankingLoss",
-    "loss_kwargs_ranges": {
-      "margin": {
-        "type": "float",
-        "low": 0.5,
-        "high": 10,
-        "q": 1.0
-      }
-    },
-    "regularizer": "NoRegularizer",
+    "loss": "NSSALoss",
     "optimizer": "adagrad",
     "optimizer_kwargs": {
       "weight_decay": 0.0
@@ -49,8 +40,7 @@
     },
     "training_loop": "slcwa",
     "training_kwargs": {
-      "num_epochs": 200,
-      "label_smoothing": 0.0
+      "num_epochs": 500
     },
     "training_kwargs_ranges": {
       "batch_size": {
@@ -58,14 +48,6 @@
         "low": 8,
         "high": 11,
         "scale": "power_two"
-      }
-    },
-    "negative_sampler_kwargs_ranges": {
-      "num_negs_per_pos": {
-        "type": "int",
-        "low": 1,
-        "high": 101,
-        "q": 10
       }
     },
     "evaluator": "RankBasedEvaluator",
