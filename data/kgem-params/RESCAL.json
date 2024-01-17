@@ -6,7 +6,7 @@
   "pipeline": {
     "stopper": "early",
     "stopper_kwargs": {
-      "frequency": 15,
+      "frequency": 50,
       "patience": 3,
       "relative_delta": 0.002
     },
